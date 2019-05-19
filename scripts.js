@@ -13,7 +13,7 @@
 
 
         /* Smooth Scroll */
-
+        /*you can use this*/
         /*$('a.smoth-scroll').on("click", function(e) {
             var anchor = $(this);
             $('html, body').stop().animate({
@@ -21,7 +21,8 @@
             }, 1000);
             e.preventDefault();
         });
-        $(document).ready(function() {
+        /*or this */
+        /*$(document).ready(function() {
             $("a.smoth-scroll").click(function(event) {
                 event.preventDefault();
                 $("html,body").animate({
@@ -29,6 +30,7 @@
                 }, 1000);
             });
         });*/
+        /*or this */  //i just found several ways of doing it. selecting href elemtents attached to Div smooth-scroll
         $("a.smoth-scroll").click(function(e) {
             e.preventDefault();
             var dest = $(this).attr('href');
@@ -46,7 +48,7 @@
                 $('.header-top-area').removeClass('navigation-background');
             }
         });
-
+/*lets filter invalid emails */
         function ValidateEmail(inputText) {
             var mailformat = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
             if (inputText.value.match(mailformat)) {
@@ -170,7 +172,7 @@
 
 
 
-        /* Statistics Counter */
+        /* Counter for styling */
 
         $('.statistics').appear(function() {
             var counter = $(this).find('.statistics-count');
